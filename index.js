@@ -48,11 +48,36 @@ class 斜線指令管理器 extends Discord.ApplicationCommandManager {
     }
 }
 
+class 斜線指令權限管理器 extends Discord.ApplicationCommandPermissionsManager {
+    constructor(){
+        super()
+        return new Discord.ApplicationCommandPermissionsManager()
+    }
+}
+
+class 應用程式標誌 extends Discord.ApplicationFlags {
+    constructor(){
+        super()
+        return new Discord.ApplicationFlags()
+    }
+}
+
+class 自動完成互動 extends Discord.AutocompleteInteraction {
+    constructor(){
+        super()
+        return new Discord.AutocompleteInteraction()
+    }
+}
+
+
 module.exports = {
     活動,
     活動標誌,
     匿名伺服器,
     應用程式,
     斜線指令,
-    斜線指令管理器
+    斜線指令管理器,
+    斜線指令權限管理器,
+    應用程式標誌,
+    自動完成互動
 }
