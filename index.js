@@ -29,8 +29,30 @@ class 匿名伺服器 extends Discord.AnonymousGuild {
         return new Discord.AnonymousGuild()
     }
 } // I think this don't need to translate too
+class 應用程式 extends Discord.Application {
+    constructor(){
+        super()
+        return new Discord.Application()
+    }
+} // ^^ same reason 
+class 斜線指令 extends Discord.ApplicationCommand {
+    constructor(){
+        super()
+        return new Discord.ApplicationCommand()
+    }
+} // ^^ same reason
+class 斜線指令管理器 extends Discord.ApplicationCommandManager {
+    constructor(){
+        super()
+        return new Discord.ApplicationCommandManager()
+    }
+}
+
 module.exports = {
     活動,
     活動標誌,
-    匿名伺服器
+    匿名伺服器,
+    應用程式,
+    斜線指令,
+    斜線指令管理器
 }
