@@ -1,0 +1,28 @@
+{
+  "name": "discord.js-chinese",
+  "version": "1.0.0",
+  "description": "讓discord.js變成中文吧！",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicTeaMC/discord.js-chinese.git"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "discord-bot",
+    "bot"
+  ],
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MagicTeaMC/discord.js-chinese/issues"
+  },
+  "homepage": "https://github.com/MagicTeaMC/discord.js-chinese#readme",
+  "dependencies": {
+    "discord.js": "=13.8.1"
+  }
+}
