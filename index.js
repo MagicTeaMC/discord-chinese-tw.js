@@ -111,6 +111,36 @@ class 基底伺服器表情符號管理員/*@Maoyue make it better*/ extends Dis
     }
 }
 
+class 基底伺服器文字頻道 extends Discord.BaseGuildTextChannel {
+    constructor(){
+        super()
+        return new Discord.BaseGuildTextChannel()
+    }
+}
+
+class 基底伺服器語音頻道 extends Discord.BaseGuildVoiceChannel {
+    constructor(){
+        super()
+        return new Discord.BaseGuildVoiceChannel()
+    }
+}
+
+class 基底管理員 extends Discord.BaseManager {
+    constructor(){
+        super()
+        return new Discord.BaseManager()
+    }
+}
+
+class 基底訊息元件 extends Discord.BaseMessageComponent {
+    constructor(data){
+        super()
+        const returning = new Discord.BaseMessageComponent(data)
+        returning.類別 = returning.type
+        return returning
+    }
+}
+
 
 module.exports = {
     活動,
@@ -127,5 +157,9 @@ module.exports = {
     基底斜線指令互動,
     基底伺服器,
     基底伺服器表情符號,
-    基底伺服器表情符號管理員
+    基底伺服器表情符號管理員,
+    基底伺服器文字頻道,
+    基底伺服器語音頻道,
+    基底管理員,
+    基底訊息元件
 }
