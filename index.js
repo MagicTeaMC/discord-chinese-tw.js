@@ -90,6 +90,27 @@ class 基底斜線指令互動 extends Discord.BaseCommandInteraction {
     }
 }
 
+class 基底伺服器 extends Discord.BaseGuild {
+    constructor(){
+        super()
+        return new Discord.BaseGuild()
+    }
+}
+
+class 基底伺服器表情符號 extends Discord.BaseGuildEmoji {
+    constructor(){
+        super()
+        return new Discord.BaseGuildEmoji
+    }
+}
+
+class 基底伺服器表情符號管理員/*@Maoyue make it better*/ extends Discord.BaseGuildEmojiManager {
+    constructor(){
+        super()
+        return new Discord.BaseGuildEmojiManager()
+    }
+}
+
 
 module.exports = {
     活動,
@@ -103,5 +124,8 @@ module.exports = {
     自動完成互動,
     基底,
     基底客戶端,
-    基底斜線指令互動
+    基底斜線指令互動,
+    基底伺服器,
+    基底伺服器表情符號,
+    基底伺服器表情符號管理員
 }
