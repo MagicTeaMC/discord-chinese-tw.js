@@ -69,6 +69,27 @@ class 自動完成互動 extends Discord.AutocompleteInteraction {
     }
 }
 
+class 基底 extends Discord.Base {
+    constructor(){
+        super()
+        return new Discord.Base
+    }
+}
+
+class 基底客戶端 extends Discord.BaseClient {
+    constructor(){  
+        super()
+        return new Discord.BaseClient()
+    }
+}
+
+class 基底斜線指令互動 extends Discord.BaseCommandInteraction {
+    constructor(){
+        super()
+        return new Discord.BaseCommandInteraction()
+    }
+}
+
 
 module.exports = {
     活動,
@@ -79,5 +100,8 @@ module.exports = {
     斜線指令管理器,
     斜線指令權限管理器,
     應用程式標誌,
-    自動完成互動
+    自動完成互動,
+    基底,
+    基底客戶端,
+    基底斜線指令互動
 }
